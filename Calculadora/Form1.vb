@@ -68,7 +68,7 @@
         If size > 0 Then TextBox1.Text = text.Remove(size - 1, 1)
 
         If TextBox1.TextLength = 0 Or TextBox1.Text.Equals("-") Then
-            TextBox1.Text = 0
+            Reset()
         End If
 
         If TextBox1.Text.LastOrDefault() = "," Then
